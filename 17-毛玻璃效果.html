@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+            background: url('./img/kobe2.jpg') center/ cover;
+        }
+        main {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            position: relative;
+            background: hsla(0,0%,100%,.3);
+            overflow: hidden;
+        }
+        main::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            filter: blur(20px);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <main>
+        <h4>科比，布莱恩特</h4>
+        <p>曼巴精神</p>
+    </main>
+</div>
+</body>
+</html>

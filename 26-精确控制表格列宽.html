@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 800px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        table tr td, table tr th {
+            border: 1px solid #ddd;
+        }
+        table tr th:nth-child(3) {
+            width: 100px;
+        }
+        table tr td:nth-child(3) {
+            width: 100px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>序号</th>
+        <th>文案1</th>
+        <th class="third">文案2</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>科比布莱恩特，一个伟大的时代，一个伟大的球员，还有一群伟大的球迷</td>
+        <td class="third">科比布莱恩特，一个伟大的时代，一个伟大的球员，还有一群伟大的球迷科比布莱恩特，一个伟大的时代，一个伟大的球员，还有一群伟大的球迷科比布莱恩特，一个伟大的时代，一个伟大的球员，还有一群伟大的球迷</td>
+        <td>
+            <a href="">编辑</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

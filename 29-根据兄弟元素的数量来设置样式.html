@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+
+        }
+        ul li {
+            display: inline-block;
+            width: 50px;
+            height: 60px;
+            background: green;
+            margin: 10px;
+        }
+        ul li:first-child:nth-last-child(n + 2):first-child:nth-last-child(-n + 4) ~ li{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>
